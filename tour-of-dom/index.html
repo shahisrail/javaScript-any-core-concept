@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Of Dom</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        ul {
+            color: red;
+        }
+        #fruits-titale{
+            color: blue;
+        }
+        #places-titale{
+            color: chartreuse;
+        }
+        .important-places{
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my Dom</h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit expedita vitae omnis dolorem alias velit fugiat? Eos reprehenderit dignissimos debitis, officiis maiores corporis dolores, ipsam fugit numquam ducimus repudiandae cupiditate.
+    </header>
+    <main id="main-container">
+       <section>
+        <h1>My Awesome DOM de baba</h1>
+        <ul>
+            <li>jalali set </li>
+            <li>safayat</li>
+            <li>bonobash</li>
+            <li>Dom de re baba</li>
+        </ul>
+       </section>
+        <section class="fruit-container">
+            <h1 id="fruits-titale">fruits i like</h1>
+            <ul>
+                <li id="li">Apple</li>
+                <li>Bananna</li>
+                <li>coarrot</li>
+            </ul>
+        </section>
+        <section id="places-container" class="large-text" >
+            <h1 id="places-title">Place i like to visit</h1>
+            <ul id="places-list">
+                <li class="important-places">sondorbon</li>
+                <li class="important-places">bandorbon</li>
+                <li class="important-places">salbon</li>
+                <li>katabon</li>
+            </ul>
+        </section>
+    </main>
+    <script src="js/dom.js"></script>
+    <script src="js/append.js"></script>
+    <script src="js/stylein.js"></script>
+    <script>
+       
+       const Places = document.getElementsByClassName('important-places');
+       for (const Place of Places){
+        // console.log(Place.innerText);
+       }
+
+         const licollectoin = document.getElementsByTagName('li');
+        // console.log(licollectoin);
+        for(const li of licollectoin){
+            // console.log(li.innerText);
+        }
+
+        const allheading = document.getElementsByTagName('h1');
+        for(const h1 of allheading){
+            // console.log(h1);
+        }
+
+     </script>
+</body>
+
+</html>
+
+
+<!-- 
+// const student = {
+    //     name: 'shah israil',
+    //     id: 11,  
+    //     study: function(time){
+    //         console.log(time, 'study korse');
+    //     }
+    // }
+    // console.log('add js inside the html file'); -->
